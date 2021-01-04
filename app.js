@@ -36,6 +36,19 @@ const countDown = setInterval( () => {
 
 }, 1000);
 
+// add click event to about button and toggle modal window
+document.getElementById('about')
+    .addEventListener('click', () => {
+        document.querySelector('.modal')
+            .classList.toggle('active');
+    });
+
+// add click event to X and close modal window
+document.getElementById('close')
+    .addEventListener('click', () => {
+        document.querySelector('.modal')
+            .classList.toggle('active');
+    });
 
 
 
